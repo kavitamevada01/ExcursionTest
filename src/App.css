@@ -1,0 +1,200 @@
+.App {
+  text-align: left;
+  font-family: "PT Sans",sans-serif;
+  font-size: 16px;
+}
+.App-logo {
+  height: 80px;
+ margin-left: 10%;
+}
+.TitleTag{
+  font-size: 16px;
+  font-weight: bold;
+  color: #007CC2;
+    padding: 15px;
+}
+.filterNavigation{
+    margin-left:15px;
+    margin-right:15px;
+}
+.Container{
+    padding:2%;
+    width:85%;
+    display: table;
+    margin: auto;
+}
+.CountryTitle {
+  font-weight: 700;
+}
+.Location{
+  padding:5px;
+  padding-top: 10px;
+  min-width: 180px;
+  max-width: 180px;
+  border-right: 2px solid #d3e9f2;
+  float:left;
+}
+.BlueBox{
+  background-color: #E8F2FB;
+  padding: 20px;
+  width: 90%;
+  margin: auto;
+}
+.App-header {
+  background-color: #F36F21;
+  height: 100px;
+  padding: 20px;
+  color: white;
+}
+.App-TopBar {
+    background-color: #F2F2F2;
+    height: 30px;
+    padding: 5px;
+    color: #565656;
+    text-align: center;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+.MenuLink, .LinkText{
+    text-decoration: none;
+    color: #565656;
+}
+.MenuLink:hover, .MenuLink:visited , .LinkText:hover,.LinkText:visited{
+    color: #565656;
+    text-decoration: underline;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+/**/
+.excursionImage{
+    width: 100%;
+}
+.excursionSection{
+}
+.excursionList{
+    width: 100%;
+    text-align: center;
+    display: table;
+}
+.excursionHeader {
+    background: #E5F2FA;
+    text-align: center;
+    padding: 5px;
+}
+.excursionCategory{
+    float: left;
+    text-align: center;
+    width: 27%;
+   /* box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);*/
+    display: table;
+    margin: 2%;
+    border: 3px solid #E5F2FA;
+    min-height: 550px;
+}
+
+.excursionItem{
+    text-align: left;
+    font-size: small;
+    height: 20px;
+    width: 60%;
+    margin: auto;
+    max-height: 120px;
+    min-height: 20px;
+}
+.excursionDesc{
+    max-height: 160px;
+    min-height: 20px;
+    padding: 5px;
+}
+.excursionName{
+    text-align: center;
+    color: #007cc3;
+    width: 90%;
+    margin: auto;
+    display: block;
+    font-size: 1.3em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+}
+
+.filterNavigation{
+    display:flex;
+    list-style:none;
+    text-align: center;
+    width: 100%;
+    color: #007CC2;
+    border: 1px solid #007CC2;
+}
+.filterNavigation li{
+    width: auto;
+    float: left;
+    margin-right: 5px;
+    padding: 8px;
+    background: #FFFFFF;
+    cursor: pointer;
+}
+.filterNavigation li:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+.filterNavigation li.active{
+    width: auto;
+    float: left;
+    margin-right: 5px;
+    color: #FFFFFF;
+    padding: 8px;
+    background: #007CC2;
+}
+.excursionSubTitle {
+    color: #333;
+    font-size: 1em;
+    text-align: center;
+    padding: 5px;
+}
+
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+    .excursionCategory{
+        width: 44%;
+        margin: 3%;
+    }
+    .filterNavigation li{
+        width: 100%;
+        float: none;
+    }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .excursionCategory {
+        width: 88%;
+        margin: 4%;
+        min-height: auto;
+    }
+    .filterNavigation{
+        width: 90%;
+        display: block;
+    }
+    .filterNavigation li,.filterNavigation li.active{
+        width: 100%;
+        float: none;
+        padding: 0px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+}
+
+
